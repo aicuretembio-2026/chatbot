@@ -77,13 +77,15 @@
         }
 
         .logo {
-            width: 50px;
-            height: 50px;
+            width: 65px; /* 50px → 65px (30% 확대) */
+            height: 65px;
             border-radius: 50%;
             border: 3px solid var(--neon-pink);
             box-shadow: 0 0 15px var(--neon-pink),
                         0 0 25px rgba(255, 23, 68, 0.5);
             animation: neonGlow 2s ease-in-out infinite alternate;
+            object-fit: cover; /* 이미지가 원 안을 채우도록 */
+            padding: 3px; /* 약간의 여백 */
         }
 
         @keyframes neonGlow {
@@ -390,15 +392,14 @@
             }
 
             .title-text {
-                font-size: 1.3rem; /* 모바일 폰트 축소 */
-                white-space: normal; /* 모바일에서 2줄 허용 */
+                font-size: 1.5rem; /* 1.3rem → 1.5rem (더 크게) */
+                white-space: nowrap; /* 한 줄 유지 */
                 line-height: 1.4;
-                word-spacing: 9999px; /* CURETEMBIO 후 강제 줄바꿈 */
             }
 
             .logo {
-                width: 40px;
-                height: 40px;
+                width: 50px; /* 40px → 50px (모바일 로고 확대) */
+                height: 50px;
             }
 
             .chatbot-main {
@@ -478,7 +479,7 @@
     <div class="top-header">
         <div class="logo-section">
             <img src="chatbot-avatar-new.png" alt="CURETEMBIO" class="logo">
-            <h1 class="title-text">CURETEMBIO - EXOBIO AI 피부상담사 -</h1>
+            <h1 class="title-text">EXOBIO AI 피부상담사</h1>
         </div>
         
         <!-- 언어 선택 -->
