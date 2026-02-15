@@ -28,8 +28,8 @@
     <meta name="twitter:image" content="https://aicuretembio-2026.github.io/chatbot/og-image.jpg">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="chatbot-avatar-logo-full.png">
-    <link rel="apple-touch-icon" href="chatbot-avatar-logo-full.png">
+    <link rel="icon" type="image/png" href="chatbot-avatar-lineart.png">
+    <link rel="apple-touch-icon" href="chatbot-avatar-lineart.png">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://aicuretembio-2026.github.io/chatbot/chatbot-standalone.html">
@@ -451,9 +451,12 @@
                 font-size: 1.1rem;
             }
 
-            /* 키워드 헤더 크기 증가 (모바일) */
+            /* 키워드 헤더 크기 축소 (모바일 - 한 줄 표시) */
             .keywords-header h4 {
-                font-size: 1.25rem; /* 데스크톱과 동일하게 */
+                font-size: 0.95rem; /* 1.25rem → 0.95rem (한 줄에 딱 맞게) */
+                white-space: nowrap; /* 줄바꿈 방지 */
+                overflow: hidden; /* 넘치는 텍스트 숨김 */
+                text-overflow: ellipsis; /* ... 표시 (필요시) */
             }
 
             /* 모바일 푸터 폰트 크기 조절 */
@@ -480,7 +483,7 @@
     <!-- 상단 헤더 -->
     <div class="top-header">
         <div class="logo-section">
-            <img src="chatbot-avatar-logo-full.png" alt="CURETEMBIO" class="logo">
+            <img src="chatbot-avatar-lineart.png" alt="CURETEMBIO" class="logo">
             <h1 class="title-text">EXOBIO AI 피부상담사</h1>
         </div>
         
@@ -520,7 +523,7 @@
             <div class="chatbot-messages" id="chatbotMessages">
                 <div class="message">
                     <div class="message-avatar">
-                        <img src="chatbot-avatar-logo-full.png" alt="CURETEMBIO">
+                        <img src="chatbot-avatar-lineart.png" alt="CURETEMBIO">
                     </div>
                     <div class="message-content">
                         <p>안녕하세요! EXOBIO AI 상담사입니다. 😊</p>
@@ -947,7 +950,7 @@
                 
                 messageDiv.innerHTML = `
                     <div class="message-avatar">
-                        <img src="chatbot-avatar-logo-full.png" alt="CURETEMBIO">
+                        <img src="chatbot-avatar-lineart.png" alt="CURETEMBIO">
                     </div>
                     <div class="message-content">
                         ${formattedText}
@@ -984,7 +987,7 @@
                 indicator.id = 'typingIndicator';
                 indicator.innerHTML = `
                     <div class="message-avatar">
-                        <img src="chatbot-avatar-logo-full.png" alt="CURETEMBIO">
+                        <img src="chatbot-avatar-lineart.png" alt="CURETEMBIO">
                     </div>
                     <div class="message-content">
                         <div class="typing-indicator">
