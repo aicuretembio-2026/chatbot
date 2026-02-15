@@ -28,8 +28,8 @@
     <meta name="twitter:image" content="https://aicuretembio-2026.github.io/chatbot/og-image.jpg">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="chatbot-avatar-new.png">
-    <link rel="apple-touch-icon" href="chatbot-avatar-new.png">
+    <link rel="icon" type="image/png" href="chatbot-avatar-logo-full.png">
+    <link rel="apple-touch-icon" href="chatbot-avatar-logo-full.png">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://aicuretembio-2026.github.io/chatbot/chatbot-standalone.html">
@@ -84,8 +84,8 @@
             box-shadow: 0 0 15px var(--neon-pink),
                         0 0 25px rgba(255, 23, 68, 0.5);
             animation: neonGlow 2s ease-in-out infinite alternate;
-            object-fit: cover; /* 이미지가 원 안을 채우도록 */
-            padding: 3px; /* 약간의 여백 */
+            object-fit: cover; /* 이미지가 원 안을 꽉 채우도록 */
+            padding: 0; /* 여백 제거 - 로고가 원형에 꽉 차게 */
         }
 
         @keyframes neonGlow {
@@ -400,6 +400,8 @@
             .logo {
                 width: 50px; /* 40px → 50px (모바일 로고 확대) */
                 height: 50px;
+                padding: 0; /* 모바일도 여백 제거 */
+                object-fit: cover; /* 꽉 차게 */
             }
 
             .chatbot-main {
@@ -478,7 +480,7 @@
     <!-- 상단 헤더 -->
     <div class="top-header">
         <div class="logo-section">
-            <img src="chatbot-avatar-new.png" alt="CURETEMBIO" class="logo">
+            <img src="chatbot-avatar-logo-full.png" alt="CURETEMBIO" class="logo">
             <h1 class="title-text">EXOBIO AI 피부상담사</h1>
         </div>
         
@@ -518,7 +520,7 @@
             <div class="chatbot-messages" id="chatbotMessages">
                 <div class="message">
                     <div class="message-avatar">
-                        <img src="chatbot-avatar-new.png" alt="CURETEMBIO">
+                        <img src="chatbot-avatar-logo-full.png" alt="CURETEMBIO">
                     </div>
                     <div class="message-content">
                         <p>안녕하세요! EXOBIO AI 상담사입니다. 😊</p>
@@ -594,7 +596,6 @@
                     <button class="quick-reply" data-query="임산부">🤰 임산부</button>
                     <button class="quick-reply" data-query="부작용">⚠️ 부작용</button>
                     <button class="quick-reply" data-query="안전성">✅ 안전성</button>
-                    <button class="quick-reply" data-query="패치테스트">🩺 패치테스트</button>
                     
                     <!-- RED 라인 (3개) -->
                     <button class="quick-reply" data-query="RED 3">💚 RED 3</button>
@@ -946,7 +947,7 @@
                 
                 messageDiv.innerHTML = `
                     <div class="message-avatar">
-                        <img src="chatbot-avatar-new.png" alt="CURETEMBIO">
+                        <img src="chatbot-avatar-logo-full.png" alt="CURETEMBIO">
                     </div>
                     <div class="message-content">
                         ${formattedText}
@@ -964,6 +965,13 @@
                     if (!line.trim()) continue;
 
                     let formatted = line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+                    
+                    // URL 자동 링크 변환 (https:// 또는 http://)
+                    formatted = formatted.replace(
+                        /(https?:\/\/[^\s<]+)/g,
+                        '<a href="$1" target="_blank" style="color: var(--neon-pink); text-decoration: underline;">$1</a>'
+                    );
+                    
                     html += `<p>${formatted}</p>`;
                 }
 
@@ -976,7 +984,7 @@
                 indicator.id = 'typingIndicator';
                 indicator.innerHTML = `
                     <div class="message-avatar">
-                        <img src="chatbot-avatar-new.png" alt="CURETEMBIO">
+                        <img src="chatbot-avatar-logo-full.png" alt="CURETEMBIO">
                     </div>
                     <div class="message-content">
                         <div class="typing-indicator">
