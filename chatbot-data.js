@@ -146,7 +146,7 @@ const CHATBOT_DATA = {
     },
     {
       id: 'acne-03',
-      keywords: ['여드름자국', '흉터', '패임'],
+      keywords: ['여드름자국', '여드름흉터', '흉터', '패임'],
       category: '트러블/여드름',
       question: '여드름자국',
       answer: `네, EXOBIO는 여드름 흉터에도 안전하게 사용하실 수 있습니다.
