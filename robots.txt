@@ -1,0 +1,47 @@
+# robots.txt for https://chatbot.curetembio.xyz/
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /chatbot-data.js
+Allow: /translations/
+
+# Disallow unnecessary files
+Disallow: /test-*.html
+Disallow: /*.md
+Disallow: /DEPLOY-*.md
+Disallow: /README*.md
+
+# Sitemap
+Sitemap: https://chatbot.curetembio.xyz/sitemap.xml
+
+# Crawl-delay for considerate bots
+Crawl-delay: 1
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
