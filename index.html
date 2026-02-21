@@ -491,7 +491,7 @@
     <div class="top-header">
         <div class="logo-section" id="headerLogo" style="cursor: pointer;" title="처음으로 돌아가기">
             <img src="chatbot-avatar-lineart.png" alt="CURETEMBIO" class="logo">
-            <h1 class="title-text">EXOBIO AI 피부상담사</h1>
+            <h1 class="title-text" data-i18n="chatbot_title">EXOBIO AI 피부상담사</h1>
         </div>
         
         <!-- 언어 선택 -->
@@ -507,7 +507,7 @@
                 <div class="language-option active" data-lang="ko">한국어</div>
                 <div class="language-option" data-lang="en">English</div>
                 <div class="language-option" data-lang="ja">日本語</div>
-                <div class="language-option" data-lang="zh">中文</div>
+                <div class="language-option" data-lang="zh-TW">繁體中文</div>
                 <div class="language-option" data-lang="th">ภาษาไทย</div>
                 <div class="language-option" data-lang="vi">Tiếng Việt</div>
                 <div class="language-option" data-lang="id">Bahasa Indonesia</div>
@@ -523,7 +523,7 @@
         <div class="chatbot-container">
             <!-- 서브타이틀 -->
             <div class="chatbot-subtitle">
-                <p>💡 아래 키워드 버튼을 클릭해서 궁금하신 점을 질문해주세요!</p>
+                <p data-i18n="chatbot_subtitle">💡 아래 키워드 버튼을 클릭해서 궁금하신 점을 질문해주세요!</p>
             </div>
 
             <!-- 대화 영역 -->
@@ -542,73 +542,10 @@
             <!-- 키워드 영역 -->
             <div class="chatbot-keywords" id="chatbotKeywords">
                 <div class="keywords-header">
-                    <h4>🔍 궁금하신 키워드를 선택해주세요</h4>
+                    <h4 data-i18n="keywords_header">🔍 궁금하신 키워드를 선택해주세요</h4>
                 </div>
-                <div class="keywords-container">
-                    <!-- 🛒 구매방법 (최우선) -->
-                    <button class="quick-reply" data-query="제품구매방법">🛒 구매방법</button>
-                    
-                    <!-- 주름/노화 (4개) -->
-                    <button class="quick-reply" data-query="주름">💫 주름</button>
-                    <button class="quick-reply" data-query="잔주름">💫 잔주름</button>
-                    <button class="quick-reply" data-query="눈가주름">💫 눈가주름</button>
-                    <button class="quick-reply" data-query="팔자주름">💫 팔자주름</button>
-                    
-                    <!-- 미백/기미 (4개) -->
-                    <button class="quick-reply" data-query="미백">💎 미백</button>
-                    <button class="quick-reply" data-query="기미">✨ 기미</button>
-                    <button class="quick-reply" data-query="색소침착">💎 색소침착</button>
-                    <button class="quick-reply" data-query="칙칙함">💎 칙칙함</button>
-                    
-                    <!-- 여드름/트러블 (5개) -->
-                    <button class="quick-reply" data-query="여드름">🔴 여드름</button>
-                    <button class="quick-reply" data-query="뾰루지">🔴 뾰루지</button>
-                    <button class="quick-reply" data-query="트러블">🔴 트러블</button>
-                    <button class="quick-reply" data-query="여드름흉터">🔴 흉터</button>
-                    <button class="quick-reply" data-query="모공">⭕ 모공</button>
-                    
-                    <!-- 진정/민감성 (5개) -->
-                    <button class="quick-reply" data-query="홍조">🌸 홍조</button>
-                    <button class="quick-reply" data-query="진정">🌿 진정</button>
-                    <button class="quick-reply" data-query="민감성">🌸 민감성</button>
-                    <button class="quick-reply" data-query="피부장벽">🛡️ 장벽</button>
-                    <button class="quick-reply" data-query="장벽 강화">🛡️ 장벽강화</button>
-                    
-                    <!-- 탄력/처짐 (3개) -->
-                    <button class="quick-reply" data-query="탄력">🌟 탄력</button>
-                    <button class="quick-reply" data-query="처짐">🌟 처짐</button>
-                    <button class="quick-reply" data-query="리프팅">🌟 리프팅</button>
-                    
-                    <!-- 수분/보습 (3개) -->
-                    <button class="quick-reply" data-query="수분">💧 수분</button>
-                    <button class="quick-reply" data-query="건성피부">💧 건성</button>
-                    <button class="quick-reply" data-query="보습">💧 보습</button>
-                    
-                    <!-- 사용법 (3개) -->
-                    <button class="quick-reply" data-query="사용법">📖 사용법</button>
-                    <button class="quick-reply" data-query="용량">📖 용량</button>
-                    <button class="quick-reply" data-query="병용">📖 병용</button>
-                    
-                    <!-- 제품 정보 (10개) -->
-                    <button class="quick-reply" data-query="추천">🎯 추천</button>
-                    <button class="quick-reply" data-query="차이">🔄 차이</button>
-                    <button class="quick-reply" data-query="EXOBIO란">💡 EXOBIO란</button>
-                    <button class="quick-reply" data-query="효능">✅ 효능</button>
-                    <button class="quick-reply" data-query="번호 의미">🔢 번호의미</button>
-                    <button class="quick-reply" data-query="가격">💰 가격</button>
-                    <button class="quick-reply" data-query="성분">🧪 성분</button>
-                    <button class="quick-reply" data-query="EXOSOME 3">🔢 EXOSOME 3</button>
-                    <button class="quick-reply" data-query="EXOSOME 5">🔢 EXOSOME 5</button>
-                    <button class="quick-reply" data-query="EXOSOME 7">🔢 EXOSOME 7</button>
-                    
-                    <!-- 안전성 (2개) -->
-                    <button class="quick-reply" data-query="부작용">⚠️ 부작용</button>
-                    <button class="quick-reply" data-query="안전성">✅ 안전성</button>
-                    
-                    <!-- RED 라인 (3개) -->
-                    <button class="quick-reply" data-query="RED 3">💚 RED 3</button>
-                    <button class="quick-reply" data-query="RED 5">💚 RED 5</button>
-                    <button class="quick-reply" data-query="RED 7">💚 RED 7</button>
+                <div class="keywords-container" id="keywordsContainer">
+                    <!-- 버튼은 JavaScript로 동적 생성됩니다 -->
                 </div>
             </div>
         </div>
@@ -619,10 +556,10 @@
         <div style="max-width: 1200px; margin: 0 auto;">
             <!-- 헤더 -->
             <div style="text-align: center; margin-bottom: 50px;">
-                <h2 style="font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 900; color: var(--white); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 2px;">
+                <h2 style="font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 900; color: var(--white); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 2px;" data-i18n="footer_title">
                     CURETEMBIO 공식 INFO
                 </h2>
-                <p style="color: var(--light-gray); font-size: clamp(0.9rem, 2.5vw, 1.1rem); line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                <p style="color: var(--light-gray); font-size: clamp(0.9rem, 2.5vw, 1.1rem); line-height: 1.6; max-width: 700px; margin: 0 auto;" data-i18n="footer_subtitle">
                     CURETEMBIO의 공식 SNS 팔로워를 해주세요.<br>
                     정보를 꾸준하게 받을 수 있으며 AI 피부진단 시스템 운영에 도움이 됩니다.
                 </p>
@@ -659,7 +596,7 @@
 
             <!-- 기타 소셜 미디어 -->
             <div style="margin-bottom: 50px;">
-                <h3 style="color: var(--neon-pink); font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; text-align: center;">🌐 공식 채널</h3>
+                <h3 style="color: var(--neon-pink); font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; text-align: center;" data-i18n="footer_official_channels">🌐 공식 채널</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; max-width: 700px; margin: 0 auto;">
                     <a href="https://www.youtube.com/@exobio" target="_blank" style="background: rgba(255, 0, 0, 0.15); border: 2px solid #FF0000; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: var(--white); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);">
                         <div style="font-size: 2.5rem; margin-bottom: 10px;">📺</div>
@@ -688,7 +625,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 50px;">
                 <!-- 공식 사이트 -->
                 <div>
-                    <h3 style="color: var(--neon-pink); font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; text-align: center;">🌐 공식 사이트</h3>
+                    <h3 style="color: var(--neon-pink); font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; text-align: center;" data-i18n="footer_official_sites">🌐 공식 사이트</h3>
                     <div style="display: flex; flex-direction: column; gap: 12px;">
                         <a href="https://curetembio.com" target="_blank" style="background: rgba(255, 23, 68, 0.1); border: 1px solid var(--neon-pink); padding: 12px 20px; border-radius: 10px; text-decoration: none; color: var(--white); display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
                             <span style="display: flex; align-items: center; gap: 10px;">
@@ -723,7 +660,7 @@
 
                 <!-- 공식 쇼핑몰 -->
                 <div>
-                    <h3 style="color: var(--neon-pink); font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; text-align: center;">🛍️ 공식 쇼핑몰</h3>
+                    <h3 style="color: var(--neon-pink); font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; text-align: center;" data-i18n="footer_shopping">🛍️ 공식 쇼핑몰</h3>
                     <div style="display: flex; flex-direction: column; gap: 12px;">
                         <a href="https://exobio.net" target="_blank" style="background: rgba(255, 23, 68, 0.1); border: 1px solid var(--neon-pink); padding: 12px 20px; border-radius: 10px; text-decoration: none; color: var(--white); display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
                             <span style="display: flex; align-items: center; gap: 10px;">
@@ -753,20 +690,20 @@
             <!-- AI 피부진단 공식 사이트 -->
             <div style="background: linear-gradient(135deg, rgba(255, 23, 68, 0.2), rgba(139, 92, 246, 0.2)); border: 3px solid var(--neon-pink); border-radius: 20px; padding: 40px; margin-bottom: 50px; text-align: center; box-shadow: 0 8px 30px rgba(255, 23, 68, 0.4);">
                 <div style="font-size: 3rem; margin-bottom: 15px;">🔬</div>
-                <h3 style="color: var(--white); font-size: 1.5rem; font-weight: 900; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">AI 피부진단 공식 사이트</h3>
+                <h3 style="color: var(--white); font-size: 1.5rem; font-weight: 900; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;" data-i18n="footer_diagnosis_title">AI 피부진단 공식 사이트</h3>
                 <a href="https://curetembio.xyz/" target="_blank" style="display: inline-block; background: var(--neon-pink); color: var(--white); padding: 15px 40px; border-radius: 50px; font-size: 1.2rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(255, 23, 68, 0.5); margin-top: 10px;">
                     curetembio.xyz
                     <span style="margin-left: 10px;">→</span>
                 </a>
-                <p style="color: var(--light-gray); font-size: 0.9rem; margin-top: 15px; line-height: 1.6;">AI 기반 10가지 피부 지표 분석 시스템</p>
+                <p style="color: var(--light-gray); font-size: 0.9rem; margin-top: 15px; line-height: 1.6;" data-i18n="footer_diagnosis_desc">AI 기반 10가지 피부 지표 분석 시스템</p>
             </div>
 
             <!-- 연락처 -->
             <div style="background: rgba(255, 23, 68, 0.1); border: 2px solid var(--neon-pink); border-radius: 15px; padding: 30px; text-align: center;">
-                <h3 style="color: var(--neon-pink); font-size: 1.3rem; font-weight: 700; margin-bottom: 15px;">
+                <h3 style="color: var(--neon-pink); font-size: 1.3rem; font-weight: 700; margin-bottom: 15px;" data-i18n="footer_contact_title">
                     📧 연락처
                 </h3>
-                <p style="color: var(--light-gray); margin-bottom: 10px; font-size: 0.95rem;">공식 이메일:</p>
+                <p style="color: var(--light-gray); margin-bottom: 10px; font-size: 0.95rem;" data-i18n="footer_contact_email">공식 이메일:</p>
                 <a href="mailto:curetembio@gmail.com" style="color: var(--white); font-size: 1.2rem; font-weight: 600; text-decoration: none; display: inline-block; padding: 10px 20px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; transition: all 0.3s ease;">
                     curetembio@gmail.com
                 </a>
@@ -776,104 +713,28 @@
 
     <!-- 저작권 -->
     <div style="text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.5);">
-        <p style="color: var(--light-gray); font-size: 0.85rem; line-height: 1.6; margin: 0;">
+        <p style="color: var(--light-gray); font-size: 0.85rem; line-height: 1.6; margin: 0;" data-i18n="footer_copyright">
             © 2024 CURETEMBIO. All Rights Reserved.
         </p>
     </div>
 
     <!-- 챗봇 스크립트 -->
+    <script src="js/chatbot-i18n.js"></script>
     <script src="chatbot-data.js"></script>
+    <script src="js/chatbot-main.js"></script>
     <script>
-        // 언어 선택 기능
-        const languageButton = document.getElementById('languageButton');
-        const languageDropdown = document.getElementById('languageDropdown');
-        const currentLanguage = document.getElementById('currentLanguage');
-        const languageOptions = document.querySelectorAll('.language-option');
-
-        languageButton.addEventListener('click', (e) => {
-            e.stopPropagation();
-            languageDropdown.classList.toggle('active');
-        });
-
-        languageOptions.forEach(option => {
-            option.addEventListener('click', () => {
-                const selectedLang = option.dataset.lang;
-                const selectedText = option.textContent;
-
-                currentLanguage.textContent = selectedText;
-                languageOptions.forEach(opt => opt.classList.remove('active'));
-                option.classList.add('active');
-                languageDropdown.classList.remove('active');
-
-                console.log('✅ 언어 변경:', selectedLang, selectedText);
-
-                if (selectedLang !== 'ko') {
-                    alert(`${selectedText} 지원은 곧 추가될 예정입니다! 😊`);
-                }
-            });
-        });
-
-        document.addEventListener('click', () => {
-            languageDropdown.classList.remove('active');
-        });
-
-        // 챗봇 기능
+        // ========================================
+        // 레거시 코드 호환성 래퍼
+        // ========================================
+        
+        // 기존 ExobioChatbot 클래스 호환성 유지
         class ExobioChatbot {
             constructor() {
-                this.messagesContainer = document.getElementById('chatbotMessages');
-                this.keywordsContainer = document.getElementById('chatbotKeywords');
-                this.currentProcessing = null;
-                this.init();
+                console.log('✅ 레거시 ExobioChatbot 호환성 모드');
             }
-
-            init() {
-                console.log('✅ EXOBIO 챗봇 초기화 시작');
-                this.attachKeywordListeners();
-                this.attachHeaderResetListener();
-                console.log('✅ 챗봇 초기화 완료');
-            }
-
-            attachHeaderResetListener() {
-                const headerLogo = document.getElementById('headerLogo');
-                if (headerLogo) {
-                    headerLogo.addEventListener('click', () => {
-                        console.log('🔄 채팅 초기화 시작');
-                        this.resetChat();
-                    });
-                    console.log('✅ 헤더 초기화 리스너 등록 완료');
-                }
-            }
-
             resetChat() {
-                // 메시지 영역 초기화
-                if (this.messagesContainer) {
-                    this.messagesContainer.innerHTML = '';
-                }
-                
-                // 처리 중인 작업 초기화
-                this.currentProcessing = null;
-                
-                // 모든 버튼 활성화
-                const buttons = this.keywordsContainer.querySelectorAll('.quick-reply');
-                buttons.forEach(button => {
-                    button.disabled = false;
-                });
-                
-                console.log('✅ 채팅 초기화 완료');
-                
-                // 부드러운 효과를 위한 애니메이션
-                this.messagesContainer.style.opacity = '0';
-                setTimeout(() => {
-                    this.messagesContainer.style.opacity = '1';
-                }, 100);
+                updateInitialGreeting(currentLanguage);
             }
-
-            attachKeywordListeners() {
-                // 리스너 중복 등록 방지
-                if (this.listenerAttached) {
-                    console.log('⚠️ 리스너 이미 등록됨');
-                    return;
-                }
 
                 this.keywordsContainer.addEventListener('click', (e) => {
                     console.log('🔴 클릭 이벤트 발생!', e.target);
