@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다국어 키워드 버튼 테스트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .language-selector {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .lang-btn {
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .lang-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+        .lang-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        .test-info {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keywords-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-height: 200px;
+        }
+        .quick-reply {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .quick-reply:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            border-radius: 5px;
+        }
+        .error {
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+        .info {
+            background: #e3f2fd;
+            border-left-color: #2196f3;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌐 다국어 키워드 버튼 테스트</h1>
+    
+    <div class="controls">
+        <h3>언어 선택</h3>
+        <div class="language-selector">
+            <button class="lang-btn active" data-lang="ko">🇰🇷 한국어</button>
+            <button class="lang-btn" data-lang="en">🇺🇸 English</button>
+            <button class="lang-btn" data-lang="ja">🇯🇵 日本語</button>
+            <button class="lang-btn" data-lang="zh-TW">🇹🇼 繁體中文</button>
+            <button class="lang-btn" data-lang="es">🇪🇸 Español</button>
+            <button class="lang-btn" data-lang="fr">🇫🇷 Français</button>
+            <button class="lang-btn" data-lang="th">🇹🇭 ภาษาไทย</button>
+            <button class="lang-btn" data-lang="vi">🇻🇳 Tiếng Việt</button>
+            <button class="lang-btn" data-lang="id">🇮🇩 Indonesia</button>
+            <button class="lang-btn" data-lang="ms">🇲🇾 Melayu</button>
+        </div>
+    </div>
+
+    <div class="test-info">
+        <h3>테스트 목적</h3>
+        <p>✅ 언어 전환 시 해당 언어의 chatbot-data.js가 올바르게 로드되는지 확인</p>
+        <p>✅ 각 언어별로 43개의 키워드 버튼이 생성되는지 확인</p>
+        <p>✅ 버튼 텍스트가 해당 언어로 올바르게 표시되는지 확인</p>
+    </div>
+
+    <div id="status" class="status info">
+        <strong>상태:</strong> 한국어 데이터 로딩 중...
+    </div>
+
+    <h2>키워드 버튼 (<span id="currentLang">한국어</span>) - 총 <span id="count">0</span>개</h2>
+    <div class="keywords-container" id="keywordsContainer">
+        <div class="loading">키워드 버튼을 생성하는 중...</div>
+    </div>
+
+    <!-- 한국어 데이터 (기본) -->
+    <script src="chatbot-data.js"></script>
+
+    <script>
+        let currentLanguage = 'ko';
+        let currentData = null;
+
+        const langNames = {
+            'ko': '한국어',
+            'en': 'English',
+            'ja': '日本語',
+            'zh-TW': '繁體中文',
+            'es': 'Español',
+            'fr': 'Français',
+            'th': 'ภาษาไทย',
+            'vi': 'Tiếng Việt',
+            'id': 'Indonesia',
+            'ms': 'Melayu'
+        };
+
+        // 키워드 버튼 생성 함수
+        function updateKeywordButtons() {
+            const container = document.getElementById('keywordsContainer');
+            const statusDiv = document.getElementById('status');
+            const countSpan = document.getElementById('count');
+            const langSpan = document.getElementById('currentLang');
+
+            console.log('🔄 키워드 버튼 업데이트:', currentLanguage);
+
+            if (!currentData) {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = '<strong>❌ 오류:</strong> 데이터를 찾을 수 없습니다!';
+                container.innerHTML = '<div class="loading">데이터 로드 실패</div>';
+                return;
+            }
+
+            if (!currentData.quickReplyKeywords) {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = `<strong>❌ 오류:</strong> ${langNames[currentLanguage]} quickReplyKeywords 배열이 없습니다!`;
+                container.innerHTML = '<div class="loading">키워드 배열 없음</div>';
+                return;
+            }
+
+            const keywords = currentData.quickReplyKeywords;
+            console.log(`✅ 키워드 개수: ${keywords.length}개`);
+
+            // 상태 업데이트
+            if (keywords.length !== 43) {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = `<strong>⚠️ 경고:</strong> 키워드 개수가 43개가 아닙니다! (현재: ${keywords.length}개)`;
+            } else {
+                statusDiv.className = 'status';
+                statusDiv.innerHTML = `<strong>✅ 성공:</strong> ${langNames[currentLanguage]} 43개의 키워드가 정상적으로 로드되었습니다!`;
+            }
+
+            countSpan.textContent = keywords.length;
+            langSpan.textContent = langNames[currentLanguage];
+
+            // 기존 버튼 제거
+            container.innerHTML = '';
+
+            // 새 버튼 생성
+            keywords.forEach((keyword, index) => {
+                const button = document.createElement('button');
+                button.className = 'quick-reply';
+                button.setAttribute('data-query', keyword.query);
+                button.textContent = keyword.label;
+                
+                button.addEventListener('click', () => {
+                    console.log(`🔵 클릭됨 [${index + 1}]:`, keyword);
+                    alert(`언어: ${langNames[currentLanguage]}\n키워드: ${keyword.label}\n쿼리: ${keyword.query}`);
+                });
+
+                container.appendChild(button);
+            });
+
+            console.log('✅ 버튼 생성 완료:', keywords.length + '개');
+        }
+
+        // 언어 데이터 로드 함수
+        async function loadLanguageData(lang) {
+            const statusDiv = document.getElementById('status');
+            const container = document.getElementById('keywordsContainer');
+
+            console.log(`🌐 언어 전환 시작: ${lang}`);
+
+            statusDiv.className = 'status info';
+            statusDiv.innerHTML = `<strong>⏳ 로딩:</strong> ${langNames[lang]} 데이터를 불러오는 중...`;
+            container.innerHTML = '<div class="loading">데이터 로딩 중...</div>';
+
+            try {
+                let dataUrl;
+                if (lang === 'ko') {
+                    dataUrl = 'chatbot-data.js';
+                } else {
+                    dataUrl = `translations/${lang}/chatbot-data.js`;
+                }
+
+                console.log(`📥 파일 로드: ${dataUrl}`);
+
+                const response = await fetch(dataUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                const scriptText = await response.text();
+                
+                // CHATBOT_DATA 추출
+                const tempScript = document.createElement('script');
+                tempScript.textContent = scriptText;
+                document.body.appendChild(tempScript);
+                
+                currentData = window.CHATBOT_DATA;
+                currentLanguage = lang;
+
+                console.log(`✅ ${lang} 데이터 로드 완료:`, currentData);
+
+                // 버튼 업데이트
+                updateKeywordButtons();
+
+                // 스크립트 제거
+                document.body.removeChild(tempScript);
+
+            } catch (error) {
+                console.error(`❌ ${lang} 데이터 로드 실패:`, error);
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = `<strong>❌ 오류:</strong> ${langNames[lang]} 데이터를 불러올 수 없습니다. (${error.message})`;
+                container.innerHTML = `<div class="loading">❌ 로드 실패: ${error.message}</div>`;
+            }
+        }
+
+        // 페이지 로드 시 실행
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('🔍 테스트 시작');
+
+            // 초기 한국어 데이터
+            if (typeof CHATBOT_DATA !== 'undefined') {
+                currentData = CHATBOT_DATA;
+                currentLanguage = 'ko';
+                updateKeywordButtons();
+            } else {
+                const statusDiv = document.getElementById('status');
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = '<strong>❌ 오류:</strong> 초기 한국어 데이터를 찾을 수 없습니다!';
+            }
+
+            // 언어 버튼 이벤트
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const lang = btn.getAttribute('data-lang');
+                    
+                    // 활성 버튼 스타일 업데이트
+                    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    // 언어 데이터 로드
+                    loadLanguageData(lang);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

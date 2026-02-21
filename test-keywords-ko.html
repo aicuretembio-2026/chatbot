@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키워드 버튼 테스트 - 한국어</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .test-info {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keywords-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .quick-reply {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .quick-reply:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            border-radius: 5px;
+        }
+        .error {
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+        .info {
+            background: #e3f2fd;
+            border-left-color: #2196f3;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 키워드 버튼 테스트 - 한국어</h1>
+    
+    <div class="test-info">
+        <h3>테스트 목적</h3>
+        <p>✅ CHATBOT_DATA에서 quickReplyKeywords 배열이 올바르게 로드되는지 확인</p>
+        <p>✅ 43개의 키워드 버튼이 모두 생성되는지 확인</p>
+        <p>✅ 각 버튼의 label과 query 값이 올바르게 설정되는지 확인</p>
+    </div>
+
+    <div id="status" class="status info">
+        <strong>상태:</strong> 데이터 로딩 중...
+    </div>
+
+    <h2>키워드 버튼 (총 <span id="count">0</span>개)</h2>
+    <div class="keywords-container" id="keywordsContainer">
+        <!-- 키워드 버튼이 여기에 동적으로 생성됩니다 -->
+    </div>
+
+    <!-- 챗봇 데이터 로드 -->
+    <script src="chatbot-data.js"></script>
+
+    <script>
+        // 페이지 로드 시 실행
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('keywordsContainer');
+            const statusDiv = document.getElementById('status');
+            const countSpan = document.getElementById('count');
+
+            console.log('🔍 테스트 시작');
+
+            // CHATBOT_DATA 확인
+            if (typeof CHATBOT_DATA === 'undefined') {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = '<strong>❌ 오류:</strong> CHATBOT_DATA를 찾을 수 없습니다!';
+                console.error('❌ CHATBOT_DATA 없음');
+                return;
+            }
+
+            console.log('✅ CHATBOT_DATA 발견:', CHATBOT_DATA);
+
+            // quickReplyKeywords 확인
+            if (!CHATBOT_DATA.quickReplyKeywords) {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = '<strong>❌ 오류:</strong> quickReplyKeywords 배열이 없습니다!';
+                console.error('❌ quickReplyKeywords 없음');
+                return;
+            }
+
+            const keywords = CHATBOT_DATA.quickReplyKeywords;
+            console.log(`✅ quickReplyKeywords 발견: ${keywords.length}개`);
+            console.log('📋 키워드 목록:', keywords);
+
+            // 키워드 개수 확인
+            if (keywords.length !== 43) {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = `<strong>⚠️ 경고:</strong> 키워드 개수가 43개가 아닙니다! (현재: ${keywords.length}개)`;
+                console.warn(`⚠️ 키워드 개수: ${keywords.length}개 (예상: 43개)`);
+            } else {
+                statusDiv.className = 'status';
+                statusDiv.innerHTML = '<strong>✅ 성공:</strong> 43개의 키워드가 모두 정상적으로 로드되었습니다!';
+                console.log('✅ 키워드 개수 정상: 43개');
+            }
+
+            countSpan.textContent = keywords.length;
+
+            // 버튼 생성
+            keywords.forEach((keyword, index) => {
+                const button = document.createElement('button');
+                button.className = 'quick-reply';
+                button.setAttribute('data-query', keyword.query);
+                button.textContent = keyword.label;
+                
+                // 클릭 이벤트
+                button.addEventListener('click', () => {
+                    console.log(`🔵 클릭됨 [${index + 1}]:`, {
+                        label: keyword.label,
+                        query: keyword.query
+                    });
+                    alert(`키워드: ${keyword.label}\n쿼리: ${keyword.query}`);
+                });
+
+                container.appendChild(button);
+            });
+
+            console.log('✅ 모든 버튼 생성 완료');
+        });
+    </script>
+</body>
+</html>
