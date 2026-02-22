@@ -1291,17 +1291,17 @@ EXOSOME (週3-4回集中ケア) + RED (毎日ベースケア) を併用すると
     { label: '💧 保湿', query: '保湿' },
     
     // 使用法
-    { label: '📖 使用法', query: '使用法' },
-    { label: '📖 用量', query: '用量' },
+    { label: '📖 使い方', query: '使用方法' },
+    { label: '📖 使用量', query: '容量' },
     { label: '📖 併用', query: '併用' },
     { label: '🔬 MTS使用法', query: 'MTS使用法' },
     
     // 製品情報
-    { label: '🎯 推奨', query: '推奨' },
+    { label: '🎯 推奨', query: 'おすすめ' },
     { label: '🔄 違い', query: '違い' },
-    { label: '💡 EXOBIOとは', query: 'EXOBIOとは' },
+    { label: '💡 EXOBIOとは?', query: 'EXOBIOとは' },
     { label: '✅ 効能', query: '効能' },
-    { label: '🔢 番号の意味', query: '番号の意味' },
+    { label: '🔢 番号の意味', query: '357' },
     { label: '💰 価格', query: '価格' },
     { label: '🧪 成分', query: '成分' },
     
