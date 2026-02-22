@@ -1294,6 +1294,7 @@ EXOSOME (週3-4回集中ケア) + RED (毎日ベースケア) を併用すると
     { label: '📖 使用法', query: '使用法' },
     { label: '📖 用量', query: '用量' },
     { label: '📖 併用', query: '併用' },
+    { label: '🔬 MTS使用法', query: 'MTS使用法' },
     
     // 製品情報
     { label: '🎯 推奨', query: '推奨' },
