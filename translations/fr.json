@@ -1,0 +1,569 @@
+{
+  "app_title": "Système de Diagnostic Cutané IA",
+  "app_subtitle": "L'IA analyse la santé de votre peau",
+  
+  "nav_home": "Accueil",
+  "nav_capture": "Capture",
+  "nav_history": "Historique",
+  "nav_info": "Info",
+  
+  "home_capture_title": "Capture Cutanée",
+  "home_capture_desc": "Prenez une photo avec un appareil photo de haute qualité et l'IA l'analysera instantanément.",
+  "home_capture_button": "Commencer la Capture",
+  
+  "home_history_title": "Suivre les Changements",
+  "home_history_desc": "Enregistrez et comparez l'évolution de votre peau au fil du temps.",
+  "home_history_button": "Voir",
+  
+  "home_consult_title": "Consultation d'Expert",
+  "home_consult_desc": "Obtenez une consultation d'expert de l'institut de recherche.",
+  "home_consult_button": "Demander une Consultation",
+  
+  "home_why_title": "🎯 Pourquoi CURETEMBIO?",
+  
+  "tech_title": "Notre Technologie",
+  "tech_intro": " combine une technologie IA de pointe avec la dermatologie pour fournir des solutions de diagnostic cutané précises et scientifiques.",
+  
+  "tech_dl_title": "Analyse d'Image Basée sur l'Apprentissage Profond",
+  "tech_dl_desc": "En utilisant la technologie de Vision par Ordinateur et les Réseaux de Neurones Convolutifs (CNN), nous analysons les images cutanées au niveau du pixel et détectons même les changements subtils. L'IA formée sur des milliers de données cliniques offre une précision de niveau dermatologue.",
+  
+  "tech_metrics_title": "Mesure précise de 10 indicateurs cutanés",
+  "tech_metrics_desc": "Nous analysons les indicateurs clés de la santé de la peau sous plusieurs angles pour évaluer l'état cutané global.",
+  
+  "tech_tracking_title": "Système de Suivi de Données Temporelles",
+  "tech_tracking_desc": "Enregistrez les changements cutanés à chaque capture et analysez les tendances au fil du temps pour fournir des solutions de soins personnalisées.",
+  "tech_tracking_desc_long": "Enregistrez automatiquement les changements cutanés à chaque capture et visualisez les tendances temporelles avec des graphiques. Analysez les schémas de changement hebdomadaires/mensuels/annuels pour identifier les réactions cutanées saisonnières et liées au mode de vie et prédire les conditions cutanées futures grâce aux algorithmes de prédiction.",
+  
+  "tech_personalized_title": "Recommandations de Soins Personnalisés",
+  "tech_personalized_desc": "L'algorithme de recommandation de produits personnalisés basé sur l'IA fournit des recommandations intelligentes en tenant compte du pays, du climat, de l'âge et de la saison.",
+  "tech_personalized_desc_long": "En combinant les résultats de l'analyse cutanée avec les informations personnelles (pays/climat/âge/saison), le moteur de recommandation IA présente des combinaisons de produits optimales. Calculez les effets de synergie Double UP pour fournir des recommandations précises avec un taux de correspondance de 70 à 98%.",
+  
+  "metric_1": "Uniformité du Teint",
+  "metric_1_desc": "Régularité du teint de la peau",
+  "metric_2": "Luminosité de la Peau",
+  "metric_2_desc": "Niveau de luminosité",
+  "metric_3": "Pigmentation",
+  "metric_3_desc": "Taches sombres/imperfections",
+  "metric_4": "Profondeur des Rides",
+  "metric_4_desc": "État des rides",
+  "metric_5": "Élasticité",
+  "metric_5_desc": "Élasticité de la peau",
+  "metric_6": "Hydratation",
+  "metric_6_desc": "Niveau d'hydratation",
+  "metric_7": "Sensibilité",
+  "metric_7_desc": "Sensibilité cutanée",
+  "metric_8": "Rougeurs",
+  "metric_8_desc": "Niveau de rougeur",
+  "metric_9": "Imperfections",
+  "metric_9_desc": "Acné/éruptions",
+  "metric_10": "Taille des Pores",
+  "metric_10_desc": "État des pores",
+  "metric_texture": "Texture de la Peau",
+  "metric_texture_desc": "Douceur de la surface",
+  
+  "capture_title": "Capture de Peau",
+  "capture_ready": "Prêt pour la capture",
+  "capture_button": "Capturer",
+  "capture_retake": "Reprendre",
+  "capture_analyze": "Démarrer l'Analyse IA",
+  "capture_complete": "✅ Capture Terminée !",
+  "capture_analyze_button": "Démarrer l'Analyse IA",
+  "capture_guide_title": "Guide de Prise de Vue",
+  "capture_guide_1": "1. Trouvez un endroit lumineux",
+  "capture_guide_2": "2. Regardez directement la caméra",
+  "capture_guide_3": "3. Gardez une expression neutre",
+  "capture_guide_4": "4. Remplissez le cadre avec votre visage",
+  
+  "analyzing": "Analyse en cours...",
+  "analyzing_desc": "L'IA analyse votre peau",
+  "analysis_complete": "Analyse Terminée!",
+  "analysis_complete_desc": "Vérifiez vos résultats",
+  
+  "result_title": "Résultat de l'Analyse Cutanée IA",
+  "result_overall": "Score de Santé Cutanée Global",
+  "result_date": "Date d'Analyse",
+  "result_details": "Détails des Indicateurs",
+  
+  "score_excellent": "Excellent",
+  "score_good": "Bon",
+  "score_fair": "Moyen",
+  "score_needs_care": "Nécessite des Soins",
+  
+  "recommendation_title": "Recommandations de Produits",
+  "recommendation_subtitle": "Produits recommandés basés sur votre analyse cutanée",
+  
+  "consult_title": "Demande de Consultation",
+  "consult_name": "Nom",
+  "consult_email": "E-mail",
+  "consult_phone": "Téléphone",
+  "consult_message": "Message",
+  "consult_submit": "Envoyer",
+  "consult_success": "Demande envoyée avec succès!",
+  "consult_error": "Échec de l'envoi. Veuillez réessayer.",
+  
+  "history_title": "Historique d'Analyse",
+  "history_subtitle": "Vérifiez l'état de la peau par période",
+  "history_empty": "Aucun historique disponible",
+  "history_date": "Date",
+  "history_score": "Score",
+  "history_view": "Voir les Détails",
+  "history_delete": "Supprimer",
+  "history_compare": "Comparer",
+  "comparison_title": "Analyse Comparative",
+  "comparison_before": "Photo Précédente",
+  "comparison_recent": "Photo Récente",
+  "history_count": "Historique de Capture",
+  "history_delete_all": "Tout Supprimer",
+  "history_no_records": "Aucun historique de capture pour le moment.",
+  "history_start_first": "Commencez votre première capture !",
+  
+  "info_about_title": "À Propos de CURETEMBIO",
+  "info_about_desc": "CURETEMBIO est un institut de recherche cutanée de pointe qui combine la technologie IA avec la dermatologie pour fournir des solutions de soins personnalisés.",
+  
+  "info_contact_title": "📧 Contact",
+  "info_contact_email": "E-mail",
+  "info_contact_email_value": "curetembio@gmail.com",
+  "info_contact_hours": "Heures d'Ouverture",
+  "info_contact_hours_value": "Lun-Ven 10:00-17:00",
+  
+  "info_social_title": "📱 Réseaux Sociaux",
+  "info_website": "Site Web",
+  "info_instagram": "Instagram",
+  
+  "footer_copyright": "© 2024 CURETEMBIO Institut de Recherche Cutanée. Tous droits réservés.",
+  "footer_privacy": "Politique de Confidentialité",
+  "footer_terms": "Conditions d'Utilisation",
+  
+  "loading": "Chargement...",
+  "error": "Erreur",
+  "retry": "Réessayer",
+  "close": "Fermer",
+  "save": "Enregistrer",
+  "cancel": "Annuler",
+  "confirm": "Confirmer",
+  "back": "Retour",
+  "next": "Suivant",
+  
+  "image_zoom": "Agrandir",
+  
+  "score_message_90": "✨ État excellent ! Maintenez votre routine de soins actuelle.",
+  "score_message_80": "👍 Bon état. Soins préventifs recommandés.",
+  "score_message_70": "💪 Amélioration nécessaire. Commencez des soins réguliers.",
+  "score_message_60": "🔥 Attention immédiate requise. Commencez des soins intensifs maintenant !",
+  
+  "product_ampoule": "Ampoule",
+  "product_exobio_intro": "Commencé dans les cliniques dermatologiques, reconnu par les pharmacies",
+  "product_exobio_name": "Ampoule Exosome Première Étape 357 pour Soins Cutanés",
+  "product_feature_1": "Effet des soins cutanés amélioré, première étape",
+  "product_feature_2": "Apporter les effets dermatologiques à domicile, soins de première étape",
+  "product_feature_3": "Sans alcool · Sans parfum · Sans colorant (3-Sans)",
+  
+  "tech_dl_title_short": "Analyse d'Image Basée sur le Deep Learning",
+  "tech_dl_desc_short": "Avec la technologie de vision par ordinateur, nous mesurons avec précision 10 indicateurs cutanés et l'IA entraînée sur des milliers de données analyse avec exactitude l'état de la peau.",
+  
+  "tech_tracking_title": "Système de Suivi de Données Temporelles",
+  "tech_tracking_desc": "Enregistrez les changements cutanés à chaque capture et analysez les tendances au fil du temps pour fournir des solutions de soins personnalisées.",
+  "tech_tracking_desc_long": "Enregistrez automatiquement les changements cutanés à chaque capture et visualisez les tendances temporelles avec des graphiques. Analysez les schémas de changement hebdomadaires/mensuels/annuels pour identifier les réactions cutanées saisonnières et liées au mode de vie et prédisez les conditions cutanées futures grâce à des algorithmes de prédiction.",
+  
+  "feature_ai_recommend": "Algorithme de recommandation de produits personnalisés basé sur l'IA",
+  "feature_smart_recommend": "Recommandations intelligentes basées sur le pays/climat/âge/saison",
+  "feature_expert_consult": "Service de consultation personnalisée par des experts",
+  "feature_privacy": "Protection de la vie privée (stocké sur l'appareil)",
+  
+  "guide_title": "Guide de Prise de Vue",
+  "guide_1": "Veuillez prendre des photos dans un endroit bien éclairé",
+  "guide_2": "Enlevez le maquillage et prenez des photos à visage nu",
+  "guide_3": "Faites face à la caméra directement",
+  "guide_4": "Alignez votre visage dans le cercle de guidage",
+  
+  "disclaimer_title": "Avis de Diagnostic Cutané :",
+  "disclaimer_content": "Le service de diagnostic cutané IA est fourni à titre de référence de base uniquement. Pour un diagnostic cutané plus détaillé, veuillez consulter un dermatologue.",
+  "disclaimer_main_title": "Avis de Diagnostic Cutané",
+  "disclaimer_main_content": "Le service de diagnostic cutané IA est fourni à titre de référence de base uniquement. Pour un diagnostic cutané plus détaillé, veuillez consulter un dermatologue.",
+  
+  "info_lab_desc": "Institut de Recherche en Diagnostic Cutané IA",
+  "tech_title": "Notre Technologie",
+  "tech_intro": " combine la technologie IA de pointe avec la dermatologie pour fournir des solutions de diagnostic cutané précises et scientifiques.",
+  "tech_intro_full": " combine la technologie IA de pointe avec la dermatologie pour fournir des solutions de diagnostic cutané précises et scientifiques.",
+  
+  "privacy_title": "Protection de la Vie Privée",
+  "privacy_desc": "Toutes les données sont cryptées et stockées sur votre appareil et ne sont pas transmises aux serveurs. (sauf demandes de consultation)",
+  "delete_all_data": "Supprimer Toutes Mes Données",
+  
+  "user_guide_title": "Guide d'Utilisation",
+  "guide_step1": "Prendre une photo de la peau avec la caméra",
+  "guide_step2": "L'IA analyse instantanément",
+  "guide_step3": "Vérifier les recommandations de produits",
+  "guide_step4": "Prendre des photos régulièrement pour suivre les changements",
+  "guide_step5": "Demander une consultation d'expert si nécessaire",
+  
+  "sns_title": "SNS Officiels de CURETEMBIO",
+  "info_title": "CURETEMBIO INFO Officiel",
+  "info_subtitle": "Suivez les SNS officiels de CURETEMBIO.\nRecevez régulièrement des informations et soutenez le système de diagnostic cutané IA.",
+  
+  "info_email": "E-mail",
+  "info_hours": "🕐 Heures d'Ouverture",
+  "info_hours_detail": "Lun-Ven 10:00~17:00",
+  "info_consult_desc": "Veuillez nous contacter par e-mail pour les consultations cutanées et les demandes.",
+  
+  "app_version": "Version 1.0.0",
+  
+  "camera_permission_title": "Autorisation de Caméra Requise",
+  "camera_permission_desc": "Veuillez autoriser l'accès à la caméra pour utiliser cette fonction.",
+  "camera_error": "Erreur de Caméra",
+  "camera_error_desc": "Impossible d'accéder à la caméra. Veuillez vérifier les autorisations.",
+  
+  "welcome_title": "Bienvenue sur CURETEMBIO!",
+  "welcome_subtitle": "Commencez votre parcours de soins cutanés IA",
+  "welcome_button": "Démarrer",
+  
+  "disclaimer_title": "Avis de Diagnostic Cutané",
+  "disclaimer_main_content": "Le service de diagnostic cutané IA est fourni à titre de référence de base uniquement. Pour un diagnostic cutané plus détaillé, veuillez consulter un dermatologue.",
+  "disclaimer_checkbox": "J'ai lu et j'accepte l'avis ci-dessus.",
+  "disclaimer_start": "Commencer le Diagnostic",
+  
+  "shooting_guide_title": "Guide de Prise de Vue",
+  "shooting_guide_lighting": "Éclairage",
+  "shooting_guide_lighting_desc": "Utilisez un éclairage naturel ou lumineux",
+  "shooting_guide_angle": "Angle",
+  "shooting_guide_angle_desc": "Regardez directement la caméra",
+  "shooting_guide_expression": "Expression",
+  "shooting_guide_expression_desc": "Gardez une expression neutre et détendue",
+  "shooting_guide_distance": "Distance",
+  "shooting_guide_distance_desc": "Remplissez le cadre avec votre visage",
+  
+  "loading_ai_model": "Chargement du modèle IA...",
+  "loading_analyzing": "Analyse de votre peau...",
+  "loading_recommend": "💡 Génération de recommandations de produits personnalisées...",
+  
+  "alert_title": "Alerte",
+  "alert_no_face": "Aucun visage détecté. Veuillez vous repositionner.",
+  "alert_multiple_faces": "Plusieurs visages détectés. Veuillez prendre la photo seul(e).",
+  "alert_dark_image": "L'image est trop sombre. Veuillez augmenter l'éclairage.",
+  "alert_blurry_image": "L'image est floue. Veuillez tenir la caméra fermement.",
+  "alert_welcome": "🎉 Bienvenue chez CURETEMBIO !\n\nPrenez soin de votre peau avec notre système de diagnostic cutané IA.",
+  "alert_delete_confirm": "Voulez-vous supprimer tous les historiques de capture ?\nCette action ne peut pas être annulée.",
+  "alert_deleted": "✅ Tous les historiques ont été supprimés.",
+  "alert_camera_error": "❌ Impossible d'accéder à la caméra.\n\nVeuillez vérifier les autorisations de caméra.",
+  "alert_no_photo": "Aucune image capturée. Veuillez reprendre la photo.",
+  "alert_analysis_error": "Une erreur s'est produite lors de l'analyse",
+  "alert_max_photos": "⚠️ Maximum de 10 historiques de photos atteint.\n\nVeuillez supprimer l'historique des photos pour un fonctionnement normal.",
+  "alert_clear_all_data": "Voulez-vous supprimer toutes mes données ?\n\nToutes les données de capture et d'analyse seront supprimées.\n\nCette action ne peut pas être annulée.",
+  "alert_all_data_cleared": "✅ Toutes les données ont été supprimées.",
+  
+  "product_premium": "Ligne Premium EXOBIO",
+  "product_red": "Ligne RED EXOBIO",
+  "product_3": "N°3 Vita (Éclaircissant)",
+  "product_5": "N°5 PDRN (Anti-Âge)",
+  "product_7": "N°7 Cica (Apaisant)",
+  "product_premium_5": "EXOBIO Premium N°5",
+  "product_red_5": "EXOBIO RED N°5",
+  
+  "name_premium_single": "Premium",
+  "name_red_single": "RED",
+  "name_mix": "Premium+RED",
+  "name_premium_red": "Premium",
+  
+  "label_intensive_care": "Soins Intensifs Recommandés",
+  "label_complex_care": "Soins Complexes Nécessaires",
+  "label_balanced_care": "Soins Équilibrés",
+  "label_daily_care": "Soins Quotidiens",
+  "label_preventive_care": "Soins Préventifs",
+  
+  "desc_premium_red_intensive": "Un traitement concentré est nécessaire pour résoudre les problèmes cutanés urgents. La combinaison de 2 produits Premium de haute concentration apporte une amélioration rapide.",
+  "desc_premium_red_complex": "Une gestion complexe est nécessaire pour résoudre plusieurs problèmes cutanés. La combinaison Premium+RED assure soins intensifs et entretien quotidien.",
+  "desc_dual_focus": "Utilisez Premium pour les soins concentrés et RED pour l'entretien quotidien afin d'obtenir un équilibre optimal entre amélioration et maintien.",
+  "desc_single_premium": "Un traitement Premium concentré 3-4 fois par semaine apporte une amélioration efficace des problèmes cutanés.",
+  "desc_single_red": "L'utilisation quotidienne de RED maintient la santé de la peau et prévient les futurs problèmes.",
+  "desc_preventive": "Maintenez un bon état cutané avec des soins préventifs quotidiens. RED N°7 est optimal pour maintenir une peau saine.",
+  
+  "reason_intensive_dual": "Les deux problèmes cutanés nécessitent une gestion concentrée",
+  "reason_intensive_complex": "Plusieurs problèmes cutanés nécessitent une gestion intensive",
+  "reason_complex_care": "Une gestion complexe est nécessaire pour les problèmes cutanés multiples",
+  "reason_balanced": "Équilibre entre soins concentrés et entretien quotidien nécessaire",
+  "reason_complex": "Gestion de plusieurs problèmes cutanés",
+  "reason_focus": "Soins concentrés nécessaires pour un problème cutané spécifique",
+  "reason_daily": "Entretien quotidien nécessaire",
+  "reason_prevention": "Soins préventifs pour maintenir une peau saine",
+  
+  "score_note_title": "Note:",
+  "score_note_desc": "Chaque score d'indicateur est évalué individuellement. Pour <span style='color: var(--red-primary); font-weight: 600;'>les éléments en dessous de 70 points</span>, veuillez consulter les recommandations de produits ci-dessous.",
+  
+  "doubleup_title": "Double UP N°",
+  "recommend_reason_title": "Raison de la Recommandation",
+  "user_problem_title": "Vos Problèmes Cutanés",
+  "user_problem_double": "Amélioration nécessaire",
+  "user_problem_score_unit": "pts",
+  "product_effect_title": "Effets du Produit",
+  "usage_guide_title": "Guide d'Utilisation",
+  
+  "usage_tip_title": "💡 Conseil d'Utilisation",
+  "usage_tip_premium": "Premium : Utilisez 3-4 fois par semaine ou au besoin pour des soins intensifs.",
+  "usage_tip_red": "RED : Utilisation quotidienne recommandée pour l'entretien et la prévention.",
+  "usage_tip_order": "Ordre d'utilisation : Nettoyage → Ampoule EXOBIO (première étape) → Produits habituels",
+  "usage_tip_content": "Appliquez comme première étape après le nettoyage pour de meilleurs résultats ! Vous pouvez continuer à utiliser vos produits actuels. 😊",
+  "usage_tip_video": "📹 Veuillez consulter la vidéo ci-dessous pour les instructions d'utilisation du produit",
+  
+  "expert_consult_title": "Consultation d'Expert",
+  "expert_consult_desc": "Pour des conseils plus détaillés, contactez l'Institut de Recherche Cutanée CURETEMBIO.",
+  "expert_consult_email": "📧 E-mail : curetembio@gmail.com",
+  "expert_consult_hours": "⏰ Heures : Lun-Ven 10:00-17:00",
+  "expert_consult_sns": "💡 Demandes de consultation via Instagram DM disponibles",
+  
+  "problem_pigmentation": "Pigmentation/taches sombres/imperfections",
+  "problem_tone": "Teint irrégulier/teint terne",
+  "problem_brightness": "Manque de luminosité/teint terne",
+  "problem_wrinkles": "Rides/ridules",
+  "problem_elasticity": "Perte d'élasticité/affaissement",
+  "problem_moisture": "Déshydratation/sécheresse",
+  "problem_sensitivity": "Peau sensible/barrière affaiblie",
+  "problem_redness": "Rougeurs/irritation",
+  "problem_trouble": "Acné/éruptions/inflammation",
+  "problem_pores": "Pores dilatés/pores visibles",
+  "problem_texture": "Texture rugueuse/irrégulière",
+  "problem_healthy": "Maintien d'une peau saine",
+  
+  "problem_prevention_reason": "Maintien d'une peau saine",
+  
+  "effect_whitening": "Effet éclaircissant et anti-taches avec Vita 620,000PPM et Niacinamide 50,000PPM",
+  "effect_antiaging": "Effet anti-âge et de régénération avec PDRN 50,000PPM et CICA-EXO 5,000PPM",
+  "effect_soothing": "Effet apaisant et de renforcement de la barrière avec CICA-EXO 50,000PPM et Centella Asiatica 30,000PPM",
+  
+  "usage_intensive_single": "Soins concentrés avec un seul produit Premium de haute concentration. Utilisez 3-4 fois par semaine, des améliorations significatives peuvent être observées en 8-12 semaines.",
+  "usage_premium_single": "Un traitement concentré est nécessaire pour une amélioration rapide. Utilisez en première étape.",
+  "usage_balanced_single": "Les produits Premium et l'entretien quotidien ensemble offrent de meilleurs résultats. Soins concentrés avec Premium 3-4 fois par semaine + entretien quotidien avec RED.",
+  "usage_daily_single": "Utilisez matin et soir pour l'entretien quotidien.",
+  "usage_intensive_dual": "Les deux problèmes nécessitent une gestion, la combinaison double Premium de haute concentration est recommandée. Utilisez chaque produit matin et soir en première étape.",
+  "usage_balanced_dual": "Les produits Premium et l'entretien quotidien ensemble offrent de meilleurs résultats. Utilisez Premium pour les problèmes principaux 3-4 fois par semaine + entretien quotidien avec RED.",
+  
+  "info_diagnosis_title": "Site Officiel de Diagnostic Cutané IA",
+  "info_diagnosis_desc": "Système d'analyse de 10 indicateurs cutanés basé sur l'IA",
+  "info_contact_title": "📧 Contact",
+  "info_contact_email_label": "E-mail Officiel",
+  
+  "exobio_357_title": "Ampoule EXOBIO 357",
+  "exobio_357_subtitle": "Soins aux exosomes commencés en dermatologie et approuvés en pharmacie",
+  "exobio_357_desc": "Ampoule 357 première étape",
+  "exobio_357_boost": "Amélioration des effets des soins cutanés, première étape",
+  "exobio_357_home": "Première étape de soins apportant les effets dermatologiques à domicile",
+  "exobio_357_free": "Sans alcool · Sans parfum · Sans colorant (3 Sans)",
+  
+  "tech_ai_title": "Algorithme de Recommandation de Produits Personnalisés Basé sur l'IA",
+  "tech_smart_title": "Recommandations Intelligentes Basées sur le Pays/Climat/Âge/Saison",
+  "tech_expert_title": "Service de Consultation Personnalisée par des Experts",
+  "tech_privacy_title": "Protection des Données Personnelles (Stockage sur l'Appareil)",
+  
+  "tech_dl_full_desc": "En utilisant la technologie de Vision par Ordinateur, nous mesurons avec précision 10 indicateurs cutanés et l'IA formée sur des milliers de données analyse avec précision l'état de la peau.",
+  
+  "info_official_title": "CURETEMBIO INFO Officiel",
+  "info_official_desc": "Suivez les SNS officiels de CURETEMBIO.",
+  "info_official_desc2": "Recevez régulièrement des informations et aidez au fonctionnement du système de diagnostic cutané IA.",
+  
+  "info_official_sites": "Sites Officiels",
+  "info_shopping": "Boutique Officielle",
+  "info_official_channels": "Canaux Officiels",
+  
+  "shooting_guide_main": "Veuillez aligner votre visage dans le guide pour la prise de vue",
+  "shooting_guide_bright": "Veuillez prendre la photo dans un endroit lumineux",
+  "shooting_guide_nomakeup": "Veuillez vous démaquiller et prendre la photo sans maquillage",
+  "shooting_guide_front": "Veuillez faire face à la caméra de face",
+  "shooting_guide_circle": "Veuillez ajuster votre visage dans le cercle de guidage",
+  
+  "diagnosis_notice_title": "Avis de Diagnostic Cutané",
+  "diagnosis_notice_desc": "Le service de diagnostic cutané IA est fourni à titre de référence de base pour la peau. Si vous souhaitez un diagnostic cutané plus détaillé, veuillez consulter un dermatologue.",
+  
+  "capture_history_title": "Historique de Capture",
+  "capture_history_count": "Historique de Capture (0 enregistrement)",
+  
+  "info_official_sns": "SNS Officiels de CURETEMBIO",
+  "info_instagram_global": "Instagram Global",
+  "info_instagram_asia": "Instagram Asie",
+  "info_instagram_japan": "Instagram Japon",
+  "info_instagram_korea": "Instagram Corée",
+  "info_youtube_global": "YouTube Global",
+  "info_x_korea": "X Corée",
+  "info_xiaohongshu_china": "小红书 Chine",
+  "info_tiktok_global": "TikTok Global",
+  
+  "info_about_curetembio": "ℹ️ À Propos de CURETEMBIO",
+  "info_subtitle": "Institut de Recherche en Diagnostic Cutané IA",
+  "info_name": "CURETEMBIO",
+  "info_full_name": "Institut Spécialisé en Diagnostic Cutané IA",
+  
+  "info_tech_title": "Notre Technologie",
+  "info_tech_desc": "CURETEMBIO combine la technologie IA et la science dermatologique pour fournir des solutions innovantes de support aux soins cutanés. Sur la base des données de capture cutanée de l'utilisateur, nous analysons l'état de la peau et aidons à une meilleure gestion de la santé cutanée grâce à des recommandations de produits adaptées à chaque individu.",
+  
+  "info_privacy_title": "Protection des Données Personnelles",
+  "info_privacy_desc": "Toutes les données sont cryptées et stockées sur l'appareil de l'utilisateur et ne sont pas transmises au serveur. (Sauf demande de consultation)",
+  
+  "info_delete_data": "Supprimer Toutes Mes Données",
+  
+  "info_guide_title": "Guide d'Utilisation",
+  "info_guide_step1": "Photographier la peau avec la caméra",
+  "info_guide_step2": "Analyse IA instantanée",
+  "info_guide_step3": "Vérifier les recommandations de produits",
+  "info_guide_step4": "Photographier régulièrement pour suivre les changements",
+  "info_guide_step5": "Demander une consultation d'expert si nécessaire",
+  
+  "info_sns_title": "SNS Officiels de CURETEMBIO",
+  "info_sns_desc": "Suivez les SNS officiels de CURETEMBIO.",
+  "info_sns_desc2": "Recevez régulièrement des informations et soutenez le système de diagnostic cutané IA.",
+  
+  "official_channels": "Canaux Officiels",
+  "official_site": "Sites Officiels",
+  "official_shop": "Boutique Officielle",
+  "info_official_channels": "🌐 Canaux Officiels",
+  "info_official_sites": "🌐 Sites Officiels",
+  "info_shopping": "🛍️ Boutique Officielle",
+  "info_diagnosis_title": "Site Officiel de Diagnostic Cutané IA",
+  "info_diagnosis_desc": "Système d'Analyse de 10 Indicateurs Cutanés Basé sur l'IA",
+  "info_contact_title": "📧 Contact",
+  "info_contact_email_label": "E-mail Officiel :",
+  
+  "info_contact_official": "📧 E-mail Officiel:",
+  "info_contact_email_official": "curetembio@gmail.com",
+  "info_contact_hours_title": "🕐 Heures d'Ouverture:",
+  "info_contact_hours_weekday": "Lun-Ven 10:00~17:00",
+  "info_contact_notice": "※ Pour les consultations cutanées et demandes, veuillez nous contacter par e-mail",
+  
+  "info_copyright": "© 2024 CURETEMBIO. Tous droits réservés.",
+  
+  "offline_warning": "Connexion Internet perdue. Une connexion Internet est nécessaire pour utiliser le diagnostic IA.",
+  "offline_diagnosis_title": "Connexion Internet Requise",
+  "offline_diagnosis_message": "Le diagnostic cutané IA est basé sur une analyse par deep learning et nécessite une connexion Internet.\n\nVeuillez vous reconnecter à Internet et réessayer.",
+  "offline_diagnosis_button": "OK",
+  
+  "alert_storage_full": "Espace de stockage insuffisant.\nSuppression des anciens enregistrements et nouvelle tentative.",
+  "alert_save_failed": "Échec de l'enregistrement.\nVeuillez supprimer tous les enregistrements sur la page d'historique et réessayer.",
+  
+  "sending": "Envoi en cours...",
+  "email_send_error": "Échec de l'envoi de l'e-mail. Veuillez réessayer.",
+  
+  "camera_permission_request": "L'accès à la caméra est nécessaire.\n\nVeuillez appuyer sur \"Autoriser\" à l'étape suivante.",
+  
+  "consult_success_hours": "Heures d'ouverture : Lun-Ven 10:00~17:00",
+  "consult_contact": "Contact",
+  "consult_email_label": "📧 E-mail Officiel :",
+  "consult_hours_label": "🕐 Heures d'Ouverture :",
+  "consult_hours_value": "Lun-Ven 10:00~17:00",
+  "consult_note": "※ Les consultations d'experts sont disponibles uniquement par e-mail",
+  
+  "label_premium_double": "Premium Double UP N°",
+  "label_intensive_complex": "Soins Intensifs Complexes Puissants",
+  "label_complex_care": "Soins Intensifs Complexes",
+  "label_balanced_care": "Soins Complexes Personnalisés",
+  
+  "desc_premium_intensive": "⭐⭐⭐ Soins Intensifs Puissants Premium",
+  "desc_premium_dual": "⭐⭐⭐ Soins Puissants Dual Premium",
+  "desc_premium_red_intensive": "⭐⭐ Soins Intensifs Premium + Économique",
+  "desc_premium_red_complex": "⭐⭐ Soins Complexes Premium + RED",
+  "desc_dual_focus": "⭐ Soins Intensifs + Préventifs",
+  "desc_single_focus": "⭐ Soins Intensifs",
+  "desc_daily_care": "💚 Soins Quotidiens",
+  "desc_maintenance": "💚 Entretien",
+  
+  "name_premium_dual": "Premium",
+  "name_doubleup": "Double UP N°",
+  "name_mix": "N°",
+  "name_red_preventive": "RED N°7 (Apaisant/Hydratant)",
+  
+  "reason_intensive": "Soins Intensifs Puissants Nécessaires",
+  "reason_intensive_complex": "Soins Intensifs Complexes Puissants",
+  "reason_intensive_care": "Soins Intensifs Nécessaires",
+  "reason_balanced": "Soins Équilibrés",
+  
+  "reason_intensive_single": "🔥 État nécessitant une gestion intensive, nous recommandons les soins puissants de la ligne Premium. En utilisant intensivement 3-4 fois par semaine, vous pouvez constater une amélioration notable en 8-12 semaines.",
+  "reason_premium_single": "💊 Des soins intensifs sont nécessaires pour une amélioration rapide. Il est recommandé de les utiliser en première étape.",
+  "reason_balanced_single": "💚 Combiner Premium et soins quotidiens est efficace.",
+  "reason_daily_single": "💚 Veuillez prendre soin régulièrement matin et soir.",
+  "reason_intensive_dual": "🔥 Les deux problèmes nécessitent une gestion, nous recommandons la combinaison dual Premium pour des soins puissants. Utilisez chaque produit matin et soir en première étape.",
+  "reason_balanced_dual": "💚 Combiner Premium et soins quotidiens est efficace.",
+  
+  "faq_title": "Questions Fréquentes (FAQ)",
+  "faq_subtitle": "Découvrez les réponses à vos questions sur le diagnostic cutané IA CURETEMBIO",
+  
+  "faq_q1": "Qu'est-ce que le diagnostic cutané IA ?",
+  "faq_a1": "Le diagnostic cutané IA de CURETEMBIO est un système qui analyse l'état de votre peau en 10 indicateurs (uniformité du teint, luminosité, pigmentation, profondeur des rides, élasticité, hydratation, sensibilité, rougeurs, acné, taille des pores) à partir d'un simple selfie grâce à la technologie de l'intelligence artificielle. Vous pouvez recevoir instantanément les résultats de l'analyse et des recommandations de produits personnalisées en 10 secondes.",
+  
+  "faq_q2": "Quelle est la précision ?",
+  "faq_a2": "Nous analysons l'état de la peau basé sur la technologie de reconnaissance faciale IA et les algorithmes de deep learning, et nous améliorons continuellement la précision grâce aux données utilisateur accumulées. Cependant, l'analyse IA est à titre de référence, et nous recommandons une consultation avec un dermatologue pour un diagnostic précis.",
+  
+  "faq_q3": "Quelles langues sont prises en charge ?",
+  "faq_a3": "Actuellement, nous prenons en charge 10 langues au total : coréen, anglais, japonais, chinois (simplifié/traditionnel), thaï, vietnamien, indonésien, malais, espagnol et français. Lors de l'accès au site, la langue du navigateur est automatiquement détectée et affichée.",
+  
+  "faq_q4": "Y a-t-il des frais d'utilisation ?",
+  "faq_a4": "Le service de diagnostic cutané IA de CURETEMBIO est 100% gratuit. Tout le monde peut l'utiliser gratuitement sans inscription, paiement ou abonnement. Nous recommandons de suivre nos SNS officiels.",
+  
+  "faq_q5": "Combien de fois puis-je recevoir un diagnostic ?",
+  "faq_a5": "Vous pouvez recevoir un diagnostic autant de fois que vous le souhaitez sans limitation. Il est recommandé de prendre des photos régulièrement pour suivre et gérer les changements cutanés. Jusqu'à 10 enregistrements peuvent être stockés sur l'appareil, et la continuité est possible avec l'inscription.",
+  
+  "faq_q6": "Où puis-je acheter les produits recommandés ?",
+  "faq_a6": "Les produits EXOBIO sont disponibles dans la boutique officielle et dans les pharmacies et cliniques dermatologiques à travers le pays. Vous pouvez vérifier le lien de la boutique officielle sur la page d'informations.",
+  
+  "faq_q7": "Puis-je utiliser plusieurs produits ensemble ?",
+  "faq_a7": "Oui, c'est possible. Le système Double UP est une méthode qui combine les lignes Premium et RED pour traiter simultanément plusieurs problèmes cutanés complexes. Il est efficace d'utiliser chaque produit en alternance 3-4 fois par semaine.",
+  
+  "faq_q8": "Puis-je utiliser avec mes produits existants ?",
+  "faq_a8": "Oui, l'ampoule EXOBIO est un produit à utiliser en première étape des soins cutanés après le nettoyage, vous pouvez donc continuer à utiliser vos toners, lotions, crèmes habituels.",
+  
+  "faq_q9": "Combien de temps faut-il utiliser pour voir des effets ?",
+  "faq_a9": "Bien qu'il y ait des variations individuelles, en général, avec une utilisation intensive 3-4 fois par semaine, vous pouvez constater une amélioration notable en 8-12 semaines. Pour les soins complexes, il est recommandé d'utiliser régulièrement pendant environ 12-16 semaines.",
+  
+  "faq_q10": "Les peaux sensibles peuvent-elles l'utiliser ?",
+  "faq_a10": "Les produits EXOBIO sont sans alcool, sans parfum, sans colorant (3-Sans) et peuvent être utilisés même sur les peaux sensibles. Cependant, cela peut varier selon l'état cutané individuel, il est donc recommandé de tester avec une petite quantité lors de la première utilisation.",
+  
+  "faq_q11": "Qu'est-ce que l'ampoule EXOBIO 357 ?",
+  "faq_a11": "L'ampoule EXOBIO 357 est un produit de soins cutanés à base d'exosomes qui a débuté dans les cliniques dermatologiques et est reconnu par les pharmacies. Il a été développé pour résoudre divers problèmes cutanés tels que l'élasticité, le blanchiment, l'apaisement et l'hydratation, et augmente l'efficacité en l'utilisant comme première étape des soins cutanés.",
+  
+  "faq_q12": "Quelle est la différence entre la ligne Premium et la ligne RED ?",
+  "faq_a12": "La ligne Premium est un produit hautement concentré pour les peaux nécessitant des soins intensifs, tandis que la ligne RED est un produit pour les soins quotidiens et la gestion préventive. Selon l'état de la peau, vous pouvez l'utiliser seul ou en combinaison (Double UP).",
+  
+  "faq_q13": "Que signifient les N°3, N°5 et N°7 ?",
+  "faq_a13": "Le N°3 est spécialisé dans le blanchiment (éclaircissement), le N°5 dans l'élasticité (élastine), et le N°7 dans l'apaisement/hydratation (barrière). Selon les résultats de l'analyse IA, le produit avec le numéro le plus approprié est recommandé.",
+  
+  "faq_q14": "Que sont les 29 combinaisons ?",
+  "faq_a14": "Grâce à l'utilisation individuelle et à la combinaison des lignes EXOBIO Premium (3 types) et RED (3 types), un total de 29 combinaisons de soins personnalisés sont possibles. L'IA analyse l'état cutané de l'utilisateur et recommande automatiquement la combinaison optimale.",
+  
+  "faq_q15": "Mes photos sont-elles stockées sur le serveur ?",
+  "faq_a15": "Non. Toutes les images capturées et les données d'analyse sont stockées de manière cryptée uniquement sur l'appareil de l'utilisateur (navigateur) et ne sont pas transmises au serveur. Nous accordons la priorité absolue à la protection des données personnelles.",
+  
+  "faq_q16": "Puis-je supprimer les données ?",
+  "faq_a16": "Oui, vous pouvez supprimer à tout moment tous les enregistrements de capture et les données d'analyse en appuyant sur le bouton 'Tout Supprimer' sur la page d'historique. Vous pouvez également les supprimer complètement via 'Supprimer Toutes Mes Données' sur la page d'informations.",
+  
+  "faq_q17": "Comment sont protégées les données personnelles ?",
+  "faq_a17": "CURETEMBIO accorde la priorité absolue à la protection des données personnelles. Les images capturées et les données d'analyse sont stockées uniquement sur l'appareil de l'utilisateur et ne sont pas transmises au serveur. Seuls le nom, l'e-mail et le contenu de la consultation que vous avez saisis lors d'une demande de consultation d'expert sont transmis de manière cryptée.",
+  
+  "faq_q18": "Puis-je l'utiliser sur mobile ?",
+  "faq_a18": "Oui, CURETEMBIO est optimisé pour les mobiles. Vous pouvez y accéder et l'utiliser sur tous les appareils tels que smartphones, tablettes et PC, et vous pouvez recevoir un diagnostic immédiatement en autorisant simplement l'accès à la caméra.",
+  
+  "faq_q19": "Comment puis-je obtenir une assistance client ?",
+  "faq_a19": "Si vous nous contactez par e-mail officiel (curetembio@gmail.com), nous vous répondrons sous 1-2 jours ouvrables. Les heures d'ouverture sont de 10h00 à 17h00 en semaine. Vous pouvez également demander une consultation d'expert sur la page d'informations.",
+  
+  "faq_q20": "Peut-on l'utiliser dans les pharmacies ou les cliniques dermatologiques ?",
+  "faq_a20": "Oui, le service de diagnostic cutané IA de CURETEMBIO est adopté dans les pharmacies et les cliniques dermatologiques à travers le pays. Vous pouvez fournir immédiatement un service d'analyse cutanée aux clients en scannant le code QR. Pour les demandes de partenariat, veuillez nous contacter par e-mail officiel."
+  
+  "name_premium_double": "Premium Double UP",
+  "name_red_double": "RED Double UP",
+  "reason_maintenance": "Maintien d'une peau saine",
+  
+  "face_detection_loading": "Chargement du modèle de détection faciale...\n\nVeuillez réessayer dans quelques instants. (Max 10 secondes)",
+  "alert_take_photo_first": "Veuillez d'abord prendre une photo.",
+  "face_detection_error": "Une erreur s'est produite lors de la détection du visage.\n\nVeuillez reprendre la photo.",
+  "image_too_dark": "❌ L'image est trop sombre.\n\nVeuillez reprendre dans un endroit lumineux.",
+  "image_too_bright": "❌ L'image est trop lumineuse.\n\nVeuillez reprendre avec un éclairage approprié.",
+  "face_not_detected": "❌ Aucun visage détecté.\n\nVeuillez vérifier les points suivants:\n- Prendre dans un endroit lumineux\n- Faire face à la caméra\n- Ajuster le visage dans le cercle de guidage\n\nVeuillez reprendre la photo.",
+  
+  "getRecommendationLabel_intensive_care": "Soins Intensifs Recommandés",
+  "getRecommendationLabel_complex_care": "Soins Complexes Nécessaires",
+  "getRecommendationLabel_balanced_care": "Soins Équilibrés",
+  "getRecommendationLabel_daily_care": "Soins Quotidiens",
+  "getRecommendationLabel_preventive_care": "Soins Préventifs",
+  
+  "match_score": "Taux de Correspondance",
+  
+  "chatbot": {
+    "title": "Consultant Chatbot IA",
+    "description": "Obtenez des consultations détaillées via Q&R par mots-clés avec notre consultant en peau IA.",
+    "cta": "Démarrer la consultation Chatbot IA"
+  }
+}
