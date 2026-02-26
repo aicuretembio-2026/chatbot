@@ -1047,7 +1047,7 @@ EXOBIO's core system, each number focuses on specific skin concerns!
 🌎 English: https://en.exobio.net/
 
 **International Shopping Malls**
-🇯🇵 Q100 JAPAN: https://www.qoo10.jp/shop/EXOBIO (Japanese)
+🇯🇵 Qoo10 JAPAN: https://www.qoo10.jp/shop/EXOBIO (Japanese)
 🇨🇳 Official Site(CN): https://cn.curetembio.com/ (Chinese, USD payment available in SHOP)
 
 💬 **China Product Purchase Inquiry**
@@ -1055,7 +1055,7 @@ EXOBIO's core system, each number focuses on specific skin concerns!
 
 💡 **Purchase Inquiry**
 📧 Email: curetembio@gmail.com
-🌐 Official Website: https://www.exobio.net/`,
+🌐 Official Website: https://www.curetembio.com/`,
       relatedQuestions: ['Product Price'],
       productTags: ['EXOSOME 3', 'EXOSOME 5', 'EXOSOME 7', 'RED 3', 'RED 5', 'RED 7']
     },
