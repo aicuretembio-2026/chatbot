@@ -1038,12 +1038,12 @@ Sistem teras EXOBIO, setiap nombor fokus pada masalah kulit tertentu!
 💻 **Pembelian Dalam Talian**
 
 **Kedai Rasmi**
-🌐 Jepun: https://www.exobio.net/
+🌐 Jepan: https://www.exobio.net/
 🇰🇷 Korea: https://kr.exobio.net/
 🌎 English: https://en.exobio.net/
 
 **Pusat Beli-belah Antarabangsa**
-🇯🇵 Qoo10 JEPUN: https://www.qoo10.jp/shop/EXOBIO (Jepun)
+🇯🇵 Qoo10 JAPANN: https://www.qoo10.jp/shop/EXOBIO (Jepan)
 🇨🇳 Laman Rasmi(CN): https://cn.curetembio.com/ (Cina, pembayaran USD tersedia di SHOP)
 
 💬 **Pertanyaan Pembelian Produk China**
