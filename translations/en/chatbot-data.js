@@ -1043,7 +1043,7 @@ EXOBIO's core system, each number focuses on specific skin concerns!
 🌎 English: https://en.exobio.net/
 
 **International Shopping Malls**
-🇯🇵 Q100 JAPAN: https://www.qoo10.jp/shop/EXOBIO (Japanese)
+🇯🇵 Qoo10 JAPAN: https://www.qoo10.jp/shop/EXOBIO (Japanese)
 🇨🇳 Official Site(CN): https://cn.curetembio.com/ (Chinese, USD payment available in SHOP)
 
 💬 **China Product Purchase Inquiry**
