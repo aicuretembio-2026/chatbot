@@ -1130,7 +1130,7 @@ EXOBIOの製品番号は、各製品の核心機能を表しています。
 🌎 英語: https://en.exobio.net/
 
 **海外ショッピングモール**
-🇯🇵 Q100 JAPAN: https://www.qoo10.jp/shop/EXOBIO (日本語)
+🇯🇵 Qoo10 JAPAN: https://www.qoo10.jp/shop/EXOBIO (日本語)
 🇨🇳 公式サイト(CN): https://cn.curetembio.com/ (中国語、SHOPでドル決済可能)
 
 💬 **中国製品購入お問い合わせ**
